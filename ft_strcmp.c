@@ -6,13 +6,13 @@
 /*   By: yunselee <yunselee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/12 17:57:10 by yunselee          #+#    #+#             */
-/*   Updated: 2021/05/13 19:45:39 by yunselee         ###   ########.fr       */
+/*   Updated: 2022/01/24 13:41:47 by yunselee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strcmp(const char *s1, const char *s2)
+int	ft_strcmp(const char *s1, const char *s2)
 {
 	int		i;
 

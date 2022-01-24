@@ -6,16 +6,16 @@
 /*   By: yunselee <yunselee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/08 20:35:53 by yunselee          #+#    #+#             */
-/*   Updated: 2021/06/22 11:54:08 by yunselee         ###   ########.fr       */
+/*   Updated: 2022/01/24 13:41:42 by yunselee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		get_size(char const *s, char c)
+static int	get_size(char const *s, char c)
 {
-	int size;
-	int j;
+	int	size;
+	int	j;
 
 	j = 0;
 	size = 0;
@@ -33,7 +33,7 @@ static int		get_size(char const *s, char c)
 	return (size);
 }
 
-static char		*ret_str(char const *s, char c)
+static char	*ret_str(char const *s, char c)
 {
 	int		i;
 	char	*addr;
@@ -41,7 +41,8 @@ static char		*ret_str(char const *s, char c)
 	i = 0;
 	while (s[i] != c && s[i] != '\0')
 		i++;
-	if ((addr = (char*)malloc(sizeof(char) * (i + 1))) == NULL)
+	addr = (char *)malloc(sizeof(char) * (i + 1));
+	if (addr == NULL)
 		return (NULL);
 	i = 0;
 	while (s[i] != c && s[i] != '\0')
@@ -53,9 +54,9 @@ static char		*ret_str(char const *s, char c)
 	return (addr);
 }
 
-static void		*free_split(char **split, int len)
+static void	*free_split(char **split, int len)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < len)
@@ -67,7 +68,7 @@ static void		*free_split(char **split, int len)
 	return (NULL);
 }
 
-char			**ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	int		size;
 	char	**addr;
@@ -77,13 +78,15 @@ char			**ft_split(char const *s, char c)
 	i = 0;
 	j = 0;
 	size = get_size(s, c);
-	if ((addr = (char**)malloc(sizeof(char*) * (size + 1))) == NULL)
+	addr = (char **)malloc(sizeof(char *) * (size + 1));
+	if (addr == NULL)
 		return (NULL);
 	while (i < size)
 	{
 		while (s[j] == c)
 			j++;
-		if ((addr[i] = ret_str(s + j, c)) == NULL)
+		addr[i] = ret_str(s + j, c);
+		if (addr[i] == NULL)
 			return (free_split(addr, i + 1));
 		while (s[j] != c && s[j] != '\0')
 			j++;

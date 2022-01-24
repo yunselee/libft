@@ -6,7 +6,7 @@
 /*   By: yunselee <yunselee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/12 18:31:56 by yunselee          #+#    #+#             */
-/*   Updated: 2021/05/12 18:44:20 by yunselee         ###   ########.fr       */
+/*   Updated: 2022/01/24 13:23:39 by yunselee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 long long	ft_abs(int nbr)
 {
-	return ((nbr > 0) ? nbr : (long long)-nbr);
+	if (nbr > 0)
+		return (nbr);
+	else
+		return ((long long)nbr * (-1));
 }

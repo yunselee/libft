@@ -6,14 +6,14 @@
 /*   By: yunselee <yunselee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/12 17:47:45 by yunselee          #+#    #+#             */
-/*   Updated: 2021/05/13 19:33:46 by yunselee         ###   ########.fr       */
+/*   Updated: 2022/01/24 13:24:51 by yunselee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isspace(char a)
+int	ft_isspace(char a)
 {
-	return (a == 0x9 || a == 0xa || a == 0xb
+	return (a == 0x9 || a == 0xa || a == 0xb \
 	|| a == 0xc || a == 0xd || a == 0x20);
 }

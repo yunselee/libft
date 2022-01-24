@@ -6,13 +6,13 @@
 /*   By: yunselee <yunselee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/12 17:54:02 by yunselee          #+#    #+#             */
-/*   Updated: 2021/05/13 19:36:06 by yunselee         ###   ########.fr       */
+/*   Updated: 2022/01/24 13:39:29 by yunselee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const unsigned char	*s1c;
 	const unsigned char	*s2c;

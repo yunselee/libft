@@ -6,13 +6,13 @@
 /*   By: yunselee <yunselee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/02 04:13:15 by yunselee          #+#    #+#             */
-/*   Updated: 2021/06/22 13:16:47 by yunselee         ###   ########.fr       */
+/*   Updated: 2022/01/24 13:23:45 by yunselee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	long long	num;
 	int			sign;

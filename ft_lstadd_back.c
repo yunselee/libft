@@ -6,13 +6,13 @@
 /*   By: yunselee <yunselee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/12 17:48:19 by yunselee          #+#    #+#             */
-/*   Updated: 2021/05/13 11:07:35 by yunselee         ###   ########.fr       */
+/*   Updated: 2022/01/24 13:38:00 by yunselee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*last;
 

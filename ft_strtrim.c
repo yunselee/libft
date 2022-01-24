@@ -6,13 +6,13 @@
 /*   By: yunselee <yunselee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/12 18:11:05 by yunselee          #+#    #+#             */
-/*   Updated: 2021/06/22 15:16:59 by yunselee         ###   ########.fr       */
+/*   Updated: 2022/01/24 13:44:01 by yunselee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char				*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	int		start;
 	int		end;
@@ -28,7 +28,8 @@ char				*ft_strtrim(char const *s1, char const *set)
 		end--;
 	if (start >= end)
 		return (ft_strdup(""));
-	if ((str = (char *)malloc(sizeof(char) * (end - start + 2))) == NULL)
+	str = (char *)malloc(sizeof(char) * (end - start + 2));
+	if (str == NULL)
 		return (NULL);
 	ft_strlcpy(str, s1 + start, end - start + 2);
 	return (str);

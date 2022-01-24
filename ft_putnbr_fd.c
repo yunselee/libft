@@ -6,14 +6,14 @@
 /*   By: yunselee <yunselee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/28 22:46:29 by yunselee          #+#    #+#             */
-/*   Updated: 2021/06/22 15:18:18 by yunselee         ###   ########.fr       */
+/*   Updated: 2022/01/24 13:40:09 by yunselee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <unistd.h>
 
-void				ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	char	cchar[11];
 	int		i;

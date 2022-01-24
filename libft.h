@@ -6,7 +6,7 @@
 /*   By: yunselee <yunselee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/13 11:51:33 by yunselee          #+#    #+#             */
-/*   Updated: 2021/06/22 15:40:48 by yunselee         ###   ########.fr       */
+/*   Updated: 2022/01/24 13:44:55 by yunselee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,11 +74,11 @@ int					ft_tolower(int c);
 
 void				*ft_calloc(size_t num, size_t size);
 
-typedef struct		s_list
+typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
-}					t_list;
+}	t_list;
 
 t_list				*ft_lstnew(void *content);
 void				ft_lstadd_front(t_list **lst, t_list *new);

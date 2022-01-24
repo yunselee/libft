@@ -6,7 +6,7 @@
 /*   By: yunselee <yunselee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/12 17:54:05 by yunselee          #+#    #+#             */
-/*   Updated: 2021/06/22 13:17:05 by yunselee         ###   ########.fr       */
+/*   Updated: 2022/01/24 13:39:34 by yunselee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	unsigned char		*ptr;
 	const unsigned char	*ptr2;
 
-	ptr = (unsigned char*)dst;
-	ptr2 = (unsigned char*)src;
+	ptr = (unsigned char *)dst;
+	ptr2 = (unsigned char *)src;
 	i = 0;
 	while (i < n)
 	{
