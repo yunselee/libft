@@ -6,7 +6,7 @@
 /*   By: yunselee <yunselee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/12 17:47:48 by yunselee          #+#    #+#             */
-/*   Updated: 2022/01/24 13:37:53 by yunselee         ###   ########.fr       */
+/*   Updated: 2022/01/24 13:52:42 by yunselee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static int	get_len(long int nbr)
 	return (len);
 }
 
-static void	init(int n, int *abs_n, int *sign, int *len)
+static void	init(int n, long long *abs_n, int *sign, int *len)
 {
 	if (n >= 0)
 	{
@@ -49,7 +49,7 @@ char	*ft_itoa(int n)
 	char		*c;
 	long long	abs_n;
 
-	init(n, &abs_n, &sign, len);
+	init(n, &abs_n, &sign, &len);
 	c = (char *)malloc(sizeof(char) * (len + 1));
 	if (c == NULL)
 		return (NULL);
