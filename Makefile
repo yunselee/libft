@@ -6,7 +6,7 @@
 #    By: yunselee <yunselee@student.42seoul.kr>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/13 16:09:04 by yunselee          #+#    #+#              #
-#    Updated: 2021/06/22 11:32:00 by yunselee         ###   ########.fr        #
+#    Updated: 2022/04/02 18:42:54 by yunselee         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,6 +37,7 @@ SOURCES =	ft_abs.c \
 			ft_putstr_fd.c \
 			ft_split.c \
 			ft_strchr.c \
+			ft_strcpy.c \
 			ft_strcmp.c \
 			ft_strdup.c \
 			ft_strjoin.c \
@@ -50,7 +51,9 @@ SOURCES =	ft_abs.c \
 			ft_strtrim.c \
 			ft_substr.c \
 			ft_tolower.c \
-			ft_toupper.c
+			ft_toupper.c \
+			get_next_line.c \
+			ft_strcat.c \
 
 BONUS =		ft_lstadd_back.c \
 			ft_lstadd_front.c \

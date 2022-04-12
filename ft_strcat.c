@@ -1,23 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yunselee <yunselee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/12 17:57:10 by yunselee          #+#    #+#             */
-/*   Updated: 2022/04/05 13:23:02 by yunselee         ###   ########.fr       */
+/*   Created: 2021/04/01 19:22:46 by yunselee          #+#    #+#             */
+/*   Updated: 2022/04/02 18:42:17 by yunselee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	ft_strcmp(const char *s1, const char *s2)
+char	*ft_strcat(char *dest, char *src)
 {
-	int		i;
+	char	*ret;
 
-	i = 0;
-	while (*(s1 + i) && *(s2 + i) && *(s1 + i) == *(s2 + i))
-		i++;
-	return (*((unsigned char *)s1 + i) - *((unsigned char *)s2 + i));
+	ret = dest;
+	if (dest == (char *)0)
+	{
+		return ((char *)0);
+	}
+	while (*dest != '\0')
+	{
+		dest++;
+	}
+	while (*src != '\0')
+	{
+		*dest = *src;
+		dest++;
+		src++;
+	}
+	*dest = '\0';
+	return (ret);
 }

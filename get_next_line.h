@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yunselee <yunselee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/12 17:57:10 by yunselee          #+#    #+#             */
-/*   Updated: 2022/04/05 13:23:02 by yunselee         ###   ########.fr       */
+/*   Created: 2021/06/25 13:28:08 by yunselee          #+#    #+#             */
+/*   Updated: 2022/02/25 18:48:35 by yunselee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
 
-int	ft_strcmp(const char *s1, const char *s2)
-{
-	int		i;
+# include <stdlib.h>
 
-	i = 0;
-	while (*(s1 + i) && *(s2 + i) && *(s1 + i) == *(s2 + i))
-		i++;
-	return (*((unsigned char *)s1 + i) - *((unsigned char *)s2 + i));
-}
+# define OPEN_MAX 256
+# define SUCCESS 1
+# define FILE_EOF 0
+# define ERROR -1
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 1024
+# endif
+
+int		get_next_line(int fd, char **line);
+
+#endif
